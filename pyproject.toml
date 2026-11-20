@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rigpack"
+version = "0.3.0"
+description = "Cross-platform game & dev config backup with zero-setup cloud storage, SHA-256 diff, restore & TUI"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [{ name = "Nirbhaya Shiwakoti", email = "nirbhayashiwakoti19@gmail.com" }]
+dependencies = [
+    "rich>=13.7.0",
+]
+
+[project.scripts]
+rigpack = "rigpack.app:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
